@@ -17,9 +17,9 @@ export default function Home() {
       <Modal
         modal={{
           id: 1,
-          title: "jirfnjd",
-          content: "loiremt erutgrjgr rjtntjr",
-          date: "28/04/2023",
+          title: "",
+          content: "Excellent Image",
+          date: "2023-07-22",
           author: "JohnDoe",
           unfollow: false,
           open: openModal,
