@@ -40,21 +40,27 @@ const Modal: React.FC<ModalProps> = ({ modal }) => {
               <h3 className="text-base font-semibold leading-6 text-gray-900">
                 {modal.title}
               </h3>
-              <div className="mt-4 p-4 rounded-md">
+
+              {/* Comments */}
+              <div className="mt-4 p-4 rounded-md  overflow-y-scroll">
                 <div key={modal.id} className="mb-2">
-                  <p className="text-sm">
-                    <span className="font-semibold">{modal.author}</span>
+                  <p className="text-xl">
+                    <span className="font-semibold pr-2">{modal.author}</span>
                     <span>{new Date(modal.date).toLocaleDateString()}</span>
+                  </p>
+                  <p className="text-xs">
                     <span>{modal.content}</span>
                   </p>
                 </div>
               </div>
-              {/* <button
-                className="absolute top-0 right-0 mt-4 mr-4"
-                onClick={}
-              >
+
+              {/* Add a comment */}
+              <div className="absolute bottom-0  mb-4">
+                <h2>Share your thoughts</h2>
+              </div>
+              <button className="absolute top-0 right-0 mt-4 mr-4">
                 Close
-              </button> */}
+              </button>
             </div>
           </motion.div>
         </Fragment>

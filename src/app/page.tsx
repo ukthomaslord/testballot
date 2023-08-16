@@ -3,7 +3,7 @@ import { useState } from "react";
 import Modal from "@/components/commentsection";
 
 export default function Home() {
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
 
   return (
     <>
@@ -18,9 +18,9 @@ export default function Home() {
         modal={{
           id: 1,
           title: "jirfnjd",
-          content: " string;",
-          date: " string;",
-          author: " string;",
+          content: "loiremt erutgrjgr rjtntjr",
+          date: "28/04/2023",
+          author: "JohnDoe",
           unfollow: false,
           open: openModal,
         }}
